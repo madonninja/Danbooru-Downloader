@@ -68,7 +68,7 @@ bannedExtensions = ["zip","swf","ebm"] #put problematic extensions here
 
 posts = client.post_list(tags=tagList, limit=amountOfImages) #get list of posts
 ending = saveLocation[-1]
-if ending == "\\":
+if ending == "\\" or ending == "/":
     pass #good file path
 else:
     print("Please add two slashes to the end of your save location!")
